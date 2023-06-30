@@ -1,0 +1,21 @@
+{
+  "name": "bumblebee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "*",
+    "backend/*",
+    "frontend/*"
+  ],
+  "scripts": {
+    "server":"cd backend && pnpm dev",
+    "ui":"pnpm i && cd frontend && pnpm dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.1.4"
+  }
+}
