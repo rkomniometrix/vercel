@@ -1,0 +1,177 @@
+@import '../../styles/abstracts/_variables.module.scss';
+@import '../../styles/base/_typography.module.scss';
+
+.container{
+    position: relative;
+
+    & > header{
+        background-image: linear-gradient(to right, $color-primary 0%, $color-primary 70%, $color-primary-dark 70%);
+        overflow: hidden;
+
+        & > form{
+            input, select, textarea{
+                background-color: transparent;
+                border: none;
+                color: white;
+                width: 100%;
+            }
+        }
+    }
+    /* ----------------------------- HEADER ------------------------------- */
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0px auto;
+
+        @media only screen and (max-width:50rem) {
+            margin-bottom: 5rem;
+        }
+        
+        &_link{
+            text-decoration: none;
+            margin-top: 20px;
+            padding: 1rem;
+        }
+
+        &_logo{
+            width: 50px;
+            height: 40px;
+            border-radius: 30%;
+            display: inline-block;
+            transition: 1s;
+
+            &:hover{
+                transform: scale(1.3);
+                background-image: linear-gradient($color-primary,$color-primary-dark);
+                box-shadow: 0 0.5rem 0.5rem $color-black;
+            }
+        }
+    }
+    .menu_icon{
+        padding: 0.5rem;
+        width: 4rem;
+        height: 4rem;
+        fill: $color-white;
+        display: inline-block;
+        background-image: linear-gradient(to bottom right, $color-primary-dark 0%, $color-primary-dark 50%, $color-primary 50%);
+
+        span svg{
+            fill: $color-white;
+            width: 30px;
+            height: 30px;
+            opacity: 0.5;
+        }
+    }
+
+    .nav_icon{
+        margin-top: 20px;
+        z-index: 10;
+        border: 2px solid $color-black;
+        border-radius: 1rem;
+        transition: 0.3s;
+        background-image: linear-gradient(to bottom right, $color-primary-dark 0%, $color-primary-dark 50%, $color-primary 50%);
+
+        &:hover{
+            transform: scale(1.5);
+            border-radius: 50%;
+            box-shadow: 0 0.5rem 0.5rem $color-black;
+            background-image: linear-gradient(to bottom right, $color-primary-dark 0%, $color-primary-dark 50%, $color-primary 50%);
+        }
+    }
+    /* -------------------------- ABOUT----------------------- */
+    .intro{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 12%;
+        margin-top: -2%;
+
+        @media only screen and (max-width:76.8rem) {
+            display: flex;
+        }
+
+        @media only screen and (max-width:50rem) {
+            display: block;
+        }
+    }
+    .developer_link{
+        margin-top: 3rem;
+        max-width: 30ch;
+        width: 25ch;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: 2px solid $color-orange;
+        color: $color-orange;
+        font-size: 3.8rem;
+
+        @media only screen and (max-width:50rem) {
+            font-size: 3rem;
+        }
+    }
+    .contact{
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+        margin-top: 8rem;
+
+        @media only screen and (max-width:50rem) {
+            margin-top: 3rem;
+        }
+    }
+    .contact_link{
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+    }
+    .reach{
+        color: $color-white;
+        font-size: 1.5rem;
+        margin-left: 10px;
+        padding: 5px;
+        border-left: 2px solid $color-orange;
+        height: 30px;
+    }
+    .facebook{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    .twitter{
+        width: 40px;
+        height: 30px;
+    }
+    .btn{
+        padding: 8px 10px;
+        font-weight: 800;
+        background-color: $color-orange;
+    }
+    .mypic{
+        flex: 1;
+    }
+    .mypic_img{
+        width: 90%;
+        height: auto;
+        outline: 2rem solid $color-orange;
+        margin-left: 5rem;
+        margin-bottom: 5rem;
+
+        @media only screen and (max-width:76.8rem) {
+            width: 90%;
+            outline: 2rem solid yellowgreen;
+            margin-left: 5rem;
+            margin-bottom: 5rem;
+        }
+
+        @media only screen and (max-width:50rem) {
+            width: 90%;
+            margin: 5rem 0 0 0;
+            outline-offset: -1rem;
+        }
+    }
+
+    /*-------------------- FORM --------------------------*/
+
+    
+}

@@ -1,0 +1,16 @@
+@import '../../styles/abstracts/_variables.module.scss';
+@import '../../styles/base/_typography.module.scss';
+
+.main_container{
+    position: relative;
+}
+
+.edit_icon {
+    font-size: 2.5rem;
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+    color: white;
+    z-index: 1;
+    cursor: pointer;;
+}

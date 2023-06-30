@@ -1,0 +1,65 @@
+@import '../../styles/abstracts/_variables.module.scss';
+@import '../../styles/base/_typography.module.scss';
+
+.section-qualifications{
+    background-image: linear-gradient(to right,rgba(33, 34, 36, 0.473), rgba(3, 8, 14, 1.2)), url("https://cdn.pixabay.com/photo/2019/07/29/09/22/scrabble-4370255_1280.jpg");
+    background-size: cover;
+    padding: 5rem 10rem;
+
+    @media only screen and (max-width:50rem) {
+        padding: 2rem 2rem 5rem 2rem;
+    }
+
+    :global{
+        .vertical-timeline-element-date{
+            color: $color-white;
+        }
+    }
+}
+
+.header-qualification{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.resume-download{
+    background-color: #3C3B3F;  /* fallback for old browsers */
+    background-image: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background-image: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 1rem 2rem;
+    border: 2px solid #cac531;
+
+    a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: $color-white;
+    }
+}
+
+.vertical-title{
+    color: $color-black;
+    font-size: 1.6rem !important;
+    text-decoration: underline;
+}
+.vertical-subtitle{
+    color: $color-black;
+    font-size: 1.4rem !important;
+}
+
+.vertical-para{
+    font-size: 1.2rem !important;
+    color: $color-black;
+}
+.vertical-date{
+    font-size: 1.4rem !important;
+
+    &--whiteText{
+        color: $color-white;
+    font-size: 1.4rem !important;
+
+    }
+}
+
+.vertical-timeline-element-date{
+    font-size: 1.5rem !important;
+}

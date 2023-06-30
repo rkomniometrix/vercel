@@ -1,0 +1,97 @@
+@import '../../styles/abstracts/_variables.module.scss';
+@import '../../styles/base/_typography.module.scss';
+
+.about{
+    background-image: linear-gradient(to right,rgba(0,0,0,1), rgba(0,0,0,0.5)),url("https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-size:cover ;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    & > form{
+        input, select, textarea{
+            background-color: transparent;
+            border: none;
+            color: white;
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width:102.4rem) {
+        height: 100vh;
+    }
+
+    @media only screen and (max-width:50rem) {
+        padding: 5rem;
+        height: auto;
+    }
+
+    &_data{
+        display: flex;
+    }
+
+    &_pic{
+        flex: 0 0 40%;
+        position: relative; 
+
+        @media only screen and (max-width:50rem) {
+            display: none;
+        }
+
+        &-me{
+            width: 55%;
+            height: auto;
+            transition: 0.5s; 
+            margin-left: 8rem;
+
+            @media only screen and (max-width:102.4rem) {
+                top: 0%;
+                left: 30%;
+            }
+
+            &:hover{
+                outline: 2rem solid orange;
+                animation: image 0.5s infinite;
+            }
+        }
+
+    }
+
+    &_bio{
+        flex: 1;
+        padding-right: 6rem;
+
+        &-para{
+            margin-top: 2rem;
+            font-size: 2.1rem;
+            font-family: 'Roboto';
+            font-weight: 300;
+            color: $color-white;
+            line-height: 1.5;
+
+            @media only screen and (max-width:50rem) {
+                font-size: 1.7rem;
+              }
+        }
+    }
+}
+
+.para_highlight{
+    font-size: 2.7rem;
+    text-decoration: underline;
+    letter-spacing: 1.5px;
+    font-family: 'Roboto';
+    font-weight: 900;
+}
+
+.sign{
+    margin-top: 1.5rem;
+    filter: invert(51) brightness(100);
+    width: 25%;
+    transition: 0.2s;
+
+    &:hover{
+        filter: invert(1);
+        transform: skewX(-10deg);
+    }
+}
